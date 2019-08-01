@@ -12,7 +12,8 @@ var privateKey = fs.readFileSync('cert/privateKey.key', 'utf8');
 var certificate = fs.readFileSync('cert/certificate.crt', 'utf8');
 var credentials = { key: privateKey, cert: certificate };
 const express = require('express');
-var connectionString = 'HostName=QRSCAN.azure-devices.net;DeviceId=QR_scan;SharedAccessKey=ctMFOExCLgRxAjPldFhFD+He6Ya/0apovJMFakKWxnI=';
+var connectionString = 'HostName=PepsiCoIOT.azure-devices.net;DeviceId=pep_id2;SharedAccessKey=VifBzzj8uJzUQi1PyonMJ0IJe4f37o/LZlm9r8iGmEI='
+// var connectionString = 'HostName=QRSCAN.azure-devices.net;DeviceId=QR_scan;SharedAccessKey=ctMFOExCLgRxAjPldFhFD+He6Ya/0apovJMFakKWxnI=';
 if (!connectionString) {
   console.log('Please set the DEVICE_CONNECTION_STRING environment variable.');
   process.exit(-1);
